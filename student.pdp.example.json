@@ -1,0 +1,45 @@
+{
+    "_id": "id",
+    "classes": [
+        {
+            "class": {},
+            "PDP": [
+                {
+                    "title": "Sezione A",
+                    "elements": [
+                        {
+                            "title": "Dati Anagrafici e Informazioni Essenziali di Presentazione dell’Allievo",
+                            "nomeCognome": {
+                                "field": "Cognome e nome allievo/a:",
+                                "input": ""
+                            },
+                            "luogoDiNascita": {
+                                "field": "Luogo di nascita:",
+                                "input": ""
+                            },
+                            "dataDiNascita": {
+                                "field": "Data di nascita:",
+                                "input": ""
+                            },
+                            "linguaMadre": {
+                                "field": "Lingua madre:",
+                                "input": ""
+                            },
+                            "lingueSecondarie": {
+                                "field": "Eventuale bilinguismo:",
+                                "input": ""
+                            },
+                            "situazioneDiBisognoEducativoSpeciale": {
+                                "field": "INDIVIDUAZIONE DELLA SITUAZIONE DI BISOGNO EDUCATIVO SPECIALE DA PARTE DI:",
+                                "input": ""
+                            }
+                        }
+
+                    }
+                }
+            ]
+        }
+
+    ]
+
+}

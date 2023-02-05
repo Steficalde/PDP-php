@@ -1,0 +1,97 @@
+{
+    "_id": "id",
+    "PDP": [
+        {
+            "title": "Dati anagrafici",
+            "elements": [
+                {"field": "A.S."},
+                {"field": "Alunno/a:"},
+                {"field": "Classe:"},
+                {"field": "Coordinatore di classe/Team:"},
+                {"field": "Coordinatore GLI:"},
+            ]
+        },
+        {
+            "title": "Sezione A",
+            "subtitle": "Dati Anagrafici e Informazioni Essenziali di Presentazione dell’Allievo",
+            "elements": [
+                {"field": "Cognome e nome allievo/a:"},
+                {"field": "Luogo di nascita:"},
+                {"field": "Data di nascita:"},
+                {"field": "Lingua madre:"},
+                {"field": "Eventuale bilinguismo:"},
+                {"field": "Individuazione della situazione di bisogno educativo speciale da parte di:",
+                    "options": [
+                        "Diagnosi",
+                        "Relazione multi professionale"
+                    ]
+                },
+                {"field": "Codice ICD10"},
+                {"field": "Redatta da:"},
+                {"field": "in data"},
+                {"field": "Aggiornamenti diagnostici:"},
+                {"field": "Altre relazioni cliniche:"},
+                {"field": "Interventi riabilitativi:"}
+            ]
+        },
+
+
+        {
+            "title": "Sezione A",
+            "subtitle": "Dati Anagrafici e Informazioni Essenziali di Presentazione dell’Allievo",
+            "elements": {
+                "nomeCognome": "Cognome e nome allievo/a:",
+                "luogoDiNascita": "Luogo di nascita:",
+                "dataDiNascita": "Data di nascita:",
+                "linguaMadre": "Lingua madre:",
+                "lingueSecondarie": "Eventuale bilinguismo:",
+                "individuazioneSituazione": {
+                    "title": "Individuazione della situazione di bisogno educativo speciale da parte di:",
+                    "options": [
+                        "Diagnosi",
+                        "Relazione multi professionale"
+                    ]
+                },
+                "codiceICD10": "Codice ICD10",
+                "redattaDa": "Redatta da:",
+                "dataRedattaDa": "in data",
+                "aggiornamentiDiagnostici": "Aggiornamenti diagnostici:",
+                "altreRelazioniCliniche": "Altre relazioni cliniche:",
+                "interventiRiabilitativi": "Interventi riabilitativi:"
+            }
+        },
+        {
+            "title": "Sezione A",
+            "elements": [
+                {
+                    "title": "Dati Anagrafici e Informazioni Essenziali di Presentazione dell’Allievo",
+                    "nomeCognome": {
+                        "field": "Cognome e nome allievo/a:",
+                        "input": ""
+                    },
+                    "luogoDiNascita": {
+                        "field": "Luogo di nascita:",
+                        "input": ""
+                    },
+                    "dataDiNascita": {
+                        "field": "Data di nascita:",
+                        "input": ""
+                    },
+                    "linguaMadre": {
+                        "field": "Lingua madre:",
+                        "input": ""
+                    },
+                    "lingueSecondarie": {
+                        "field": "Eventuale bilinguismo:",
+                        "input": ""
+                    },
+                    "situazioneDiBisognoEducativoSpeciale": {
+                        "field": "INDIVIDUAZIONE DELLA SITUAZIONE DI BISOGNO EDUCATIVO SPECIALE DA PARTE DI:",
+                        "input": ""
+                    }
+                }
+            ]
+        }
+
+    ]
+}
