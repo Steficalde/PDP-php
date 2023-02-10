@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SchoolClassController;
+use App\Http\Controllers\StudentController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -25,14 +28,44 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
-
-Route::middleware('auth')->group(function () {
+Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+
+
+/**
+ *
+ * /documents
+ * /documents/[document]
+ * /documents/[document]/edit
+ *
+ * /years/[year]/classes
+ * /years/[year]/classes/[class]/students
+ * /years/[year]/classes/[class]/students/[student]
+ * /years/[year]/classes/[class]/students/[student]/document/[document]
+ * /years/[year]/classes/[class]/students/[student]/document/[document]/edit
+ *
+ */
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::resource('years.classes', SchoolClassController::class);
+    Route::resource('years.classes.students', StudentController::class);
+    Route::resource('years.classes.students', StudentController::class);
+
+
+});
+
+Route::middleware(['auth', 'verified', 'responsible'])->group(function () {
+    Route::resource('documents', DocumentController::class);
+});
+
+
+
+
+
+
+
 
 require __DIR__.'/auth.php';
